@@ -1,0 +1,393 @@
+/* =========================
+   BARGAIN PAGE
+========================= */
+
+.offer-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    background: #f3f5f9;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.offer-card {
+    width: 100%;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.offer-card h2 {
+    margin: 0 0 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.offer-card form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* =========================
+   INPUT + SELECT
+========================= */
+
+.offer-card input[type="number"],
+.offer-card select {
+    width: 100%;
+    height: 55px;
+    padding: 0 18px;
+    box-sizing: border-box;
+
+    border: 1.5px solid #d1d5db;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+    color: #374151;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.offer-card input[type="number"]:hover,
+.offer-card select:hover {
+    border-color: #6366f1;
+}
+
+.offer-card input[type="number"]:focus,
+.offer-card select:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+
+/* =========================
+   PREMIUM SELECT
+========================= */
+
+.offer-card select {
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding-right: 50px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 16 16'%3E%3Cpath d='M3 6l5 5 5-5' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+    background-size: 18px;
+}
+
+.offer-card select option {
+    color: #374151;
+    background: #ffffff;
+}
+
+
+/* =========================
+   SWITCH
+========================= */
+
+.switch {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 60px;
+    height: 55px;
+
+    margin-top: 10px;
+    padding: 0;
+
+    justify-self: start;
+}
+
+.switch input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: relative;
+
+    width: 60px;
+    height: 34px;
+
+    display: block;
+
+    cursor: pointer;
+    background: #cbd5e1;
+
+    border-radius: 30px;
+
+    transition: background 0.3s ease;
+}
+
+.slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 26px;
+    height: 26px;
+
+    top: 4px;
+    left: 4px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.switch input:checked + .slider {
+    background: #22c55e;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+
+/* =========================
+   CREATE / UPDATE BUTTON
+========================= */
+
+.offer-card form > button {
+    width: 100%;
+    height: 55px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #6c63ff,
+        #3b82f6
+    );
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.offer-card form > button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 20px
+        rgba(79, 70, 229, 0.25);
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+
+    overflow-x: auto;
+}
+
+.table-card table {
+    width: 100%;
+    min-width: 800px;
+
+    border-collapse: collapse;
+}
+
+.table-card th {
+    padding: 18px;
+
+    background: #4f46e5;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    text-align: left;
+}
+
+.table-card th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.table-card th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.table-card td {
+    padding: 18px;
+
+    color: #374151;
+
+    border-bottom:
+        1px solid #e5e7eb;
+}
+
+.table-card tbody tr {
+    transition: background 0.2s ease;
+}
+
+.table-card tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.active,
+.inactive {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 80px;
+
+    padding: 7px 14px;
+
+    /* border-radius: 20px; */
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.active {
+    background: #22c55e;
+}
+
+.inactive {
+    background: #ef4444;
+}
+
+
+/* =========================
+   EDIT + DELETE
+========================= */
+
+.edit,
+.delete {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.edit {
+    background: #f59e0b;
+    margin-right: 8px;
+}
+
+.delete {
+    background: #ef4444;
+}
+
+.edit:hover,
+.delete:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .offer-card form {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .offer-page {
+        padding: 15px;
+    }
+
+    .offer-card,
+    .table-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .offer-card h2 {
+        font-size: 22px;
+    }
+
+    .offer-card form {
+        grid-template-columns: 1fr;
+    }
+
+    .switch {
+        justify-self: start;
+    }
+}

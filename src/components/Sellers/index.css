@@ -1,0 +1,167 @@
+/* main container */
+
+.seller-page-container{
+    padding:30px;
+    background:#f6f7fb;
+    min-height:100vh;
+    width: 99%;
+    }
+    
+    /* header */
+    
+    .seller-page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    }
+    
+    .seller-page-title{
+    font-size:26px;
+    font-weight:600;
+    color:#333;
+    }
+    
+    /* table wrapper */
+    
+    .seller-table-wrapper{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    overflow:hidden;
+    }
+    
+    /* table */
+    
+    .seller-main-table{
+    width:100%;
+    border-collapse:collapse;
+    }
+    
+    /* table head */
+    
+    .seller-table-head{
+    background:#1e293b;
+    color:#fff;
+    }
+    
+    .seller-head-row th{
+    padding:14px;
+    font-size:14px;
+    font-weight:500;
+    text-align:center;
+    }
+    
+    /* body */
+    
+    .seller-table-body td{
+    padding:14px;
+    text-align:center;
+    font-size:14px;
+    color:#444;
+    border-bottom:1px solid #eee;
+    }
+    
+    /* row hover */
+    
+    .seller-body-row:hover{
+    background:#f8fafc;
+    transition:0.3s;
+    }
+    
+    /* name column */
+    
+    .seller-col-name{
+    font-weight:500;
+    color:#222;
+    }
+    
+    /* email */
+    
+    .seller-col-email{
+    color:#555;
+    }
+    
+    /* status */
+    
+    .seller-status-active{
+    background:#d1fae5;
+    color:#059669;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:500;
+    }
+    
+    .seller-status-inactive{
+    background:#fee2e2;
+    color:#dc2626;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:500;
+    }
+    
+    /* product numbers */
+    
+    .seller-col-eyewear,
+    .seller-col-footwear,
+    .seller-col-clothings,
+    .seller-col-bags,
+    .seller-col-jewellery{
+    font-weight:500;
+    color:#0f172a;
+    }
+
+    
+
+
+
+    /* table column */
+
+.seller-col-footwear{
+    text-align:center;
+    font-weight:500;
+    }
+    
+    /* approved badge */
+    
+    .seller-approved{
+    display:inline-block;
+    padding:6px 14px;
+    font-size:12px;
+    font-weight:600;
+    border-radius:20px;
+    background:#e0f2fe;
+    color:#0284c7;
+    border:1px solid #bae6fd;
+    transition:0.3s;
+    }
+    
+    /* pending badge */
+    
+    .seller-pending{
+    display:inline-block;
+    padding:6px 14px;
+    font-size:12px;
+    font-weight:600;
+    border-radius:20px;
+    background:#fef9c3;
+    color:#ca8a04;
+    border:1px solid #fde68a;
+    transition:0.3s;
+    }
+    
+    /* hover effect */
+    
+    .seller-approved:hover{
+    background:#0284c7;
+    color:#fff;
+    cursor:pointer;
+    }
+    
+    .seller-pending:hover{
+    background:#ca8a04;
+    color:#fff;
+    cursor:pointer;
+    }
